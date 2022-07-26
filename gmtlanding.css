@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://drive.google.com/uc?export=view&id=1sEY5SK6NwT1gWRzKiEEkbiL85nOCxZuh");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  height: 90vh;
+  width: 100vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "news content2 content1 "
+    "news content2 content1 ";
+}
+
+.logo2 {
+  width: 50%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+li,
+a,
+button {
+  font-family: Roboto Mono;
+  font-weight: 800;
+  font-size: 35px;
+  color: black;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px;
+  border-bottom: 1px solid black;
+}
+
+.nav__links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li a:hover {
+  color: greenyellow;
+}
+
+button {
+  background-color: greenyellow;
+  font-family: Roboto Mono;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 8px;
+  margin: 10px 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+button:hover {
+  background-color: royalblue;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.3fr;
+  grid-template-areas:
+    "news content2 content1 "
+    "news content2 content1 "
+    "disc disc disc ";
+}
+
+.hello {
+  grid-area: news;
+  font-family: Roboto Mono;
+}
+.data {
+  font-size: 150%;
+  font-style: bold;
+  color: aliceblue;
+  margin: 5%;
+  padding-bottom: 2%;
+}
+.hello2 {
+  grid-area: content2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto Mono;
+}
+
+.hello3 {
+  grid-area: content1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto Mono;
+}
+
+.hello4 {
+  grid-area: disc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news2 {
+  padding-top: 3%;
+  padding-bottom: 5%;
+  color: white;
+  font-size: 100%;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  padding-top: 2%;
+  font-family: Roboto Mono;
+}
+
+.link:hover {
+  color: greenyellow;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin: 5%;
+}
+
+.hello > p {
+  color: white;
+  text-align: center;
+  font-size: larger;
+  margin: 3%;
+}
+
+.sources {
+  max-height: 200px;
+  width: 40%;
+  min-width: 80px;
+  text-align: center;
+  font-style: italic;
+  color: white;
+  font-size: 120%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: rgb(116, 116, 116);
+  opacity: 100%;
+  padding: 8px;
+  margin: 10px 0;
+
+  text-decoration: none;
+}
+
+.sources:hover {
+  background-color: greenyellow;
+  opacity: 80%;
+}
+
+.disclaimer {
+  color: antiquewhite;
+  font-family: Roboto Mono;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 10px;
+  margin-bottom: 1%;
+
+  font-size: x-large;
+}
+
+@media screen and (max-width: 1222px) {
+  .sources {
+    max-height: 200px;
+    width: 40%;
+    min-width: 40px;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    font-size: small;
+
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: rgb(116, 116, 116);
+    opacity: 100%;
+    padding: 3px;
+    margin: 4px 0;
+
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 911px) {
+  li,
+  a,
+  button {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.3fr;
+    grid-template-areas:
+      "news "
+      "content1"
+      "content2"
+      "disc";
+  }
+  body {
+    background-image: url("https://drive.google.com/uc?export=view&id=1sEY5SK6NwT1gWRzKiEEkbiL85nOCxZuh");
+    background-size: cover;
+    background-repeat: repeat;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    border-bottom: 1px solid black;
+  }
+  .hello2 {
+    font-size: 80%;
+  }
+  .logo2 {
+    width: 90px;
+    height: auto;
+  }
+  .disclaimer {
+    font-size: 90%;
+  }
+}
